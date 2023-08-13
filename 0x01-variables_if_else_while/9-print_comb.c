@@ -2,8 +2,7 @@
 /**
  * main - Entry point
  *
- * Description: Prints all possible combinations of single-digit numbers
- * 
+ * Description: Prints all possible combinations of single-digit numbers 
  *
  * Return: Always 0 (Success)
  */
@@ -14,11 +13,10 @@ int main(void)
 	for (num = 0; num < 10; num++)
 {
 	putchar(num + '0');
-        
 	if (num != 9)
 {
-            putchar(',');
-            putchar(' ');
+	putchar(',');
+	putchar(' ');
 }
 }
 
