@@ -10,9 +10,9 @@ int main(void)
 {
 	int letter = 'z';
 
-	while (letter <= 'a')
+	while (letter < 'a')
 {
-	putchar(letter- 'z');
+	putchar(letter - 'z');
 }
 	letter--;
 	putchar('\n');
