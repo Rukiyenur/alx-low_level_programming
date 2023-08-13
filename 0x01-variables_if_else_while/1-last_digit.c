@@ -14,10 +14,11 @@ int main(void)
 {
 	int n;
 	int y;
+	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	y = n % 10;
-    	printf("y of %d is %d ", n, y);
+    	printf("y of %d is %d", n, y);
 
 	if (y > 5)
 {
