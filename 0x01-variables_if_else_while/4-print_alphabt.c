@@ -12,9 +12,9 @@ int main(void)
 
 	while ( letter <= 'z');
 {
-	if ( letter !='q',&& letter != 'e')
+	if ( letter !='q', letter != 'e')
 {
-	putchar(leeter);
+	putchar(letter);
 }
 	letter++;
 }
