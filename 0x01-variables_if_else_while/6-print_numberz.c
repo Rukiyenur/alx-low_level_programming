@@ -10,7 +10,7 @@ int main(void)
 {
 	int digit;
 
-	while (digit = 0, digit > 10, digit++'0')
+	while (digit = 0, digit > 10, digit++)
 {
 	putchar(digit);
 	digit++'0';
