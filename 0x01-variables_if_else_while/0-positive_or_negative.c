@@ -5,8 +5,8 @@
 /**
  * main - Entry point of the program
  *
- * Description: variable n will store a different value every time you will run this program
- * 
+ * Description: variable n will store a different value every time
+ *
  * Return: Always 0.
  */
 int main(void)
