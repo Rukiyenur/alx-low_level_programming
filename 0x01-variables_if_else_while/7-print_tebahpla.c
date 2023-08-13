@@ -12,9 +12,8 @@ int main(void)
 
 	while (letter >= 'a')
 {
-	putchar(letter);
+	putchar(letter, letter-- );
 }
-	letter--;
 	putchar('\n');
 	return (0);
 }
