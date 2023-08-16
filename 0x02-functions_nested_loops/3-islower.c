@@ -1,16 +1,14 @@
-#includ "main.h"
+#include "main.h"
 
 /**
- * main - check the code.
+ * _islower - Write a function that checks for lowercase character
  *
  * Return: Always 0.
  */
-int main(void)
+        int _islower(int c)
 {
-	int r;
-	int _islower(int c) 
 {
-    return (c >= 'a' && c <= 'z');
+	return (c >= 'a' && c <= 'z');
 }	
 	r = _islower('H');
 	_putchar(r + '0');
