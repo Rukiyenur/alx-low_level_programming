@@ -2,6 +2,9 @@
 
 /**
 * main - causes an infinite loop
+*
+* Description: Comment out (don’t delete it!)
+*
 * Return: 0
 */
 
