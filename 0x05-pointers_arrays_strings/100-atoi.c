@@ -16,7 +16,7 @@ int _atoi(char *s)
 
 	while (s[i] != '\0')
 {
-	if (s[i] == '-')
+	if (s[i] = '-')
 {
 	sign *= -1;
 }
@@ -24,7 +24,7 @@ int _atoi(char *s)
 {
 	result = result * 10 + (s[i] - '0');
 }
-	else if (result != 0) // Stop if non-digit after digits
+	else if (result != 0)
 {
 	break;
 }
