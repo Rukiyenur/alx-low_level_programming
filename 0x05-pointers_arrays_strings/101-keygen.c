@@ -5,7 +5,7 @@ int main(void)
 {
 	int sum = 0;
 	char password[84];
-
+	int i;
 	srand(time(NULL));
 
 	for (int i = 0; i < 84; i++)
