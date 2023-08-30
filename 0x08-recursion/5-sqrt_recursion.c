@@ -4,7 +4,7 @@
  * sqrt_recursion - Calculates the square root of a number using recursion.
  * @n: The number for which to calculate the square root.
  * @guess: The current guess for the square root.
- *
+ * Description: a function that returns the natural square root of a number
  * Return: The square root of the number, or -1 if it doesn't have a natural square root.
  */
 int sqrt_guess(int n, int guess);
