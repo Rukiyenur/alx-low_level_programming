@@ -5,7 +5,7 @@
  * @ac: the number of arguments.
  * @av: an array of strings containing the arguments.
  *
- * Return: On success, returns a pointer 
+ * Return: On success, returns a pointer
  *         If ac is 0, av is NULL, or if memory allocation fails, returns NULL.
  */
 char *argstostr(int ac, char **av)
