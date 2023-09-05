@@ -4,7 +4,8 @@
  * strtow - splits a string into words.
  * @str: the string to split.
  *
- * Return: On success, returns a pointer to an array of returns NULL.
+ * Return: On success, returns a pointer to an array of strings (words)
+ *         returns NULL.
  */
 char **strtow(char *str)
 {
@@ -13,9 +14,8 @@ char **strtow(char *str)
 
 	if (str == NULL || *str == '\0')
 	return (NULL);
-
 	for (i = 0; str[i]; i++)
-	{
+{
 	if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
 	word_count++;
 }
@@ -24,7 +24,7 @@ char **strtow(char *str)
 	return (NULL);
 
 	words = (char **)malloc((word_count + 1) * sizeof(char *));
-    
+
 	if (words == NULL)
 	return (NULL);
 
@@ -32,13 +32,13 @@ char **strtow(char *str)
 {
 	while (str[j] == ' ')
 	j++;
-        
+
 	len = 0;
 	while (str[j + len] != ' ' && str[j + len] != '\0')
 	len++;
-        
+
 	words[i] = (char *)malloc((len + 1) * sizeof(char));
-        
+
 	if (words[i] == NULL)
 {
 	for (k = 0; k < i; k++)
@@ -46,8 +46,8 @@ char **strtow(char *str)
 	free(words);
 	return (NULL);
 }
-        
-	for (k = 0; k < len; k++)	
+
+	for (k = 0; k < len; k++)
 	words[i][k] = str[j + k];
 	words[i][k] = '\0';
 
