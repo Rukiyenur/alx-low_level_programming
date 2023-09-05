@@ -2,11 +2,13 @@
 
 char *create_array(unsigned int size, char c)
 {
+	char *array;
+	unsigned int i;
+
 	if (size == 0)
 	return NULL;
 
-	char *array = (char *)malloc(size * sizeof(char));
-	 unsigned int i;
+	array = (char *)malloc(size * sizeof(char));
 
 	if (array == NULL)
 	return NULL;
